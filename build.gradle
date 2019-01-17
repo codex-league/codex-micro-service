@@ -1,0 +1,60 @@
+def codexVersion = '1.0.0'
+def codexGroup = 'pub.codex'
+def vJavaLang = '1.8'
+
+
+
+def bootProjects = [project(":codex-server-eureka")]
+
+
+allprojects() {
+    group = codexGroup
+    version = codexVersion
+}
+
+subprojects(){
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: "io.spring.dependency-management"
+
+    targetCompatibility = vJavaLang
+    sourceCompatibility = vJavaLang
+
+    dependencyManagement {
+        imports {
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:Finchley.SR2"
+        }
+    }
+
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+
+}
+
+
+configure(bootProjects) {
+
+    apply plugin: 'org.springframework.boot'
+}
+
+buildscript {
+    ext {
+        springBootVersion = '2.0.4.RELEASE'
+
+    }
+
+
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+

@@ -1,0 +1,15 @@
+server:
+  port: 8201
+
+spring:
+  application:
+    name: 'EUREKA-SERVER-2'
+
+eureka:
+  instance:
+    hostname: eureka2
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://eureka1:8200/eureka/

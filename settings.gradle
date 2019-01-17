@@ -1,0 +1,4 @@
+rootProject.name = 'codex-micro-service'
+include 'codex-service-mall'
+include 'codex-server-eureka'
+

@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+    jce_java:
+        build: ./docker-jce-jre
+        image: pronter/jce-java
+        read_only: true
+        command: echo "jce java"
+        environment:
+            - TZ=Asia/Shanghai
+    codex-server-eureka-1:
+        build: ../codex-server-eureka
+        image: prontera/codex-server-eureka
+        ports:
+            - "8200:8200"
+        depends_on:
+            - 'jce_java'
+        environment:
+          - TZ=Asia/Shanghai
+          - spring.profiles.active=local1
+    codex-server-eureka-2:
+        build: ../codex-server-eureka
+        image: prontera/codex-server-eureka
+        ports:
+            - "8201:8201"
+        depends_on:
+            - 'jce_java'
+        environment:
+            - TZ=Asia/Shanghai
+            - spring.profiles.active=local2
