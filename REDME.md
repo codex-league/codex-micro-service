@@ -13,10 +13,26 @@
 
   【codex-micro-service】            //主工程
             |
-            |【codex-service-mall】     //商城模块
+            |【codex-server-config】    // 外部配置 【8100】
+            |【codex-server-eureka】    // 注册中心 【8200】
+            |
+            |【codex-service-demo】     // 演示模块  【6000】
+            |
             
 
 ```
+
+
+
+##### 端口信息
+
+模块|开发端口|集群端口|说明
+--|--|--|--
+codex-server-eureka|8100|          |
+codex-server-eureka|8200|8200、8201|eureka监控地址
+
+
+
 
 
 

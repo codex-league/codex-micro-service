@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: DEMO-SERVICE
+
+
+
+management:
+  server:
+    port: 6100
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

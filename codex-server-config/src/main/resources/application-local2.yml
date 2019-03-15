@@ -1,0 +1,13 @@
+server:
+  port: 8101
+
+
+spring:
+  application:
+    name: 'CONFIG-SERVER-2'
+  datasource:
+    url: ${DB_MICRO_URL}
+    username: ${DB_MICRO_USERNAME}
+    password: ${DB_MICRO_PWD}
+    driver-class-name: com.mysql.jdbc.Driver
+

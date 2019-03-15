@@ -1,0 +1,10 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        jdbc:
+          sql: "select `key`, value from properties where application=? and profile=? and label=?"
+
+
+
