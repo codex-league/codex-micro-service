@@ -8,3 +8,7 @@ ENTRYPOINT [ "java", "-jar" , "/app.jar" ]
 EXPOSE 8200 8201
 
 
+
+
+
+
