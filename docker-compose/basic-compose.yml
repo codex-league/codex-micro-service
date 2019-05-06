@@ -44,6 +44,10 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - spring.profiles.active=local1
+    networks:
+      backend:
+        aliases:
+          - e1
   codex-server-eureka-2:
     build: ../codex-server-eureka
     image: prontera/codex-server-eureka
@@ -54,5 +58,11 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - spring.profiles.active=local2
+    networks:
+      backend:
+        aliases:
+          - e2
 
 
+networks:
+  backend:

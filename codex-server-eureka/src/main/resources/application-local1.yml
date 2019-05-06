@@ -13,6 +13,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://eureka2:8201/eureka/
+      defaultZone: http://e2:8201/eureka/
     registry-fetch-interval-seconds: 5
     instance-info-replication-interval-seconds: 5
