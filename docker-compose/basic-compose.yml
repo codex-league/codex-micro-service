@@ -8,6 +8,7 @@ services:
     command: echo "jce java"
     environment:
       - TZ=Asia/Shanghai
+
   codex-server-config-1:
     build: ../codex-server-config
     image: prontera/codex-server-config
@@ -16,24 +17,35 @@ services:
     depends_on:
       - 'jce_java'
     environment:
-      - TZ=Asia/Shanghai
-      - spring.profiles.active=local1
+      - server.port=8100
+      - spring.profiles.active=local
       - DB_MICRO_URL
       - DB_MICRO_USERNAME
       - DB_MICRO_PWD
+      - TZ=Asia/Shanghai
+#    network_mode: "host"
+    networks:
+      backend:
+
+
   codex-server-config-2:
     build: ../codex-server-config
     image: prontera/codex-server-config
     ports:
-      - "8101:8201"
+      - "8101:8101"
     depends_on:
       - 'jce_java'
     environment:
-      - TZ=Asia/Shanghai
-      - spring.profiles.active=local2
+      - server.port=8101
+      - spring.profiles.active=local
       - DB_MICRO_URL
       - DB_MICRO_USERNAME
       - DB_MICRO_PWD
+      - TZ=Asia/Shanghai
+#    network_mode: "host"
+    networks:
+      backend:
+
   codex-server-eureka-1:
     build: ../codex-server-eureka
     image: prontera/codex-server-eureka
@@ -44,10 +56,12 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - spring.profiles.active=local1
+#    network_mode: "host"
     networks:
       backend:
         aliases:
-          - e1
+          - eureka1
+
   codex-server-eureka-2:
     build: ../codex-server-eureka
     image: prontera/codex-server-eureka
@@ -58,10 +72,12 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - spring.profiles.active=local2
+#    network_mode: "host"
     networks:
       backend:
         aliases:
-          - e2
+          - eureka2
+
 
 
 networks:

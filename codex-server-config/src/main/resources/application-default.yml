@@ -1,10 +1,7 @@
 server:
   port: 8100
 
-
 spring:
-  application:
-    name: 'CONFIG-SERVER'
   datasource:
     url: ${DB_MICRO_URL}
     username: ${DB_MICRO_USERNAME}

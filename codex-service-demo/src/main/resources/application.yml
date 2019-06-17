@@ -3,8 +3,6 @@ spring:
   application:
     name: DEMO-SERVICE
 
-
-
 management:
   server:
     port: 6100
@@ -12,4 +10,5 @@ management:
     web:
       exposure:
         include: "*"
+
 

@@ -1,5 +1,6 @@
 package com.codex.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -8,12 +9,16 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.config.server.environment.JdbcEnvironmentProperties;
 import org.springframework.cloud.config.server.environment.JdbcEnvironmentRepository;
 import org.springframework.cloud.config.server.environment.JdbcEnvironmentRepositoryFactory;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableConfigServer
+@EnableEurekaClient
 public class ConfigServerApplication {
 
     public static void main(String[] args) {

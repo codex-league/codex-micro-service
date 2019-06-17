@@ -1,10 +1,6 @@
 server:
   port: 8200
 
-spring:
-  application:
-    name: 'EUREKA-SERVER'
-
 eureka:
   instance:
     hostname: localhost

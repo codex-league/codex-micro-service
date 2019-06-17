@@ -6,4 +6,6 @@ dependencies {
     implementation('org.springframework.cloud:spring-cloud-config-server')
 
     implementation("mysql:mysql-connector-java:5.1.38")
+
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 }
