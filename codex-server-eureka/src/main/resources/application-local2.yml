@@ -16,3 +16,4 @@ eureka:
       defaultZone: http://eureka1:8200/eureka/
     registry-fetch-interval-seconds: 5
     instance-info-replication-interval-seconds: 5
+

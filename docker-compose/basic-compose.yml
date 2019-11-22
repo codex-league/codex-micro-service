@@ -78,7 +78,5 @@ services:
         aliases:
           - eureka2
 
-
-
 networks:
   backend:

@@ -15,7 +15,7 @@ allprojects() {
 
 subprojects(){
 
-    apply plugin: 'java'
+    apply plugin: 'java' 
     apply plugin: 'idea'
     apply plugin: "io.spring.dependency-management"
 
@@ -32,6 +32,12 @@ subprojects(){
     repositories {
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     }
+
+    dependencies {
+        testImplementation "org.springframework.boot:spring-boot-starter-test"
+    }
+
+
 
 }
 

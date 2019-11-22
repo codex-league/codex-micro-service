@@ -9,3 +9,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:8200/eureka/
+
+
+
+
+
+a: xxxxx
