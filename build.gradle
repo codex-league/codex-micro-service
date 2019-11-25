@@ -5,7 +5,10 @@ def vJavaLang = '1.8'
 
 
 def bootProjects = [project(":codex-server-eureka"),
-                    project(":codex-server-config")]
+                    project(":codex-server-config"),
+                    project(":codex-service-web"),
+                    project(":codex-service-core")
+]
 
 
 allprojects() {

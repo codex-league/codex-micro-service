@@ -19,7 +19,7 @@
             |【codex-service-core】     // 核心模块
             |【codex-service-web】     //  web业务模块
 
-            |【codex-service-test】     // 演示模块  【6000】
+            |【codex-test-core】     // 演示模块  【6000】
             |
              
 

@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: DEMO-SERVICE
+    name: TEST-CORE
 
 management:
   server:
