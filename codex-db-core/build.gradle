@@ -6,11 +6,14 @@ dependencies {
 //    implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("mysql:mysql-connector-java:5.1.21")
     implementation("com.alibaba:druid-spring-boot-starter:1.1.10")
-    implementation("com.baomidou:mybatis-plus:2.1.9")
+    compile("com.baomidou:mybatis-plus:2.1.9")
     implementation("com.baomidou:mybatisplus-spring-boot-starter:1.0.5")
     implementation("org.springframework.cloud:spring-cloud-context")
     implementation("org.springframework.boot:spring-boot-starter-aop")
     implementation("pub.codex:codex-apix:3.1.0")
 }
+
+
+
 
 

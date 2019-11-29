@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -45,8 +44,8 @@ codex:
     entity-path: pub.codex.db.core.entity
     mapper-path: pub.codex.db.core.mapper
     mapperXML-path: mapper
-    service-path: pub.codex.core.service
-    serviceImpl-path: pub.codex.service.impl
+    service-path: pub.codex.db.core.service
+    serviceImpl-path: pub.codex.db.core.service.impl
     controller-path: pub.codex.core.controller
   prefix: sys_
 apix:

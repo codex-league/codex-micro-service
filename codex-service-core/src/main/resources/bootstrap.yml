@@ -5,8 +5,7 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG-SERVER
-
-
+        
 eureka:
   instance:
     prefer-ip-address: true

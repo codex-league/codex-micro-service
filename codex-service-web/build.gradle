@@ -1,13 +1,16 @@
 
 dependencies {
     dependencies {
-        implementation project(":codex-common-core")
+        implementation project(":codex-db-core")
         implementation("org.springframework.cloud:spring-cloud-starter")
         implementation("org.springframework.cloud:spring-cloud-config-client")
         implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
 
         implementation("org.springframework.boot:spring-boot-starter-web")
         implementation("org.springframework.boot:spring-boot-starter-actuator")    //Spring boot 运维管理
+
+        compile 'pub.codex:codex-index:3.1.0'
+        compile 'pub.codex:codex-core-template-mybatis-plus:3.1.0'
     }
 
 }

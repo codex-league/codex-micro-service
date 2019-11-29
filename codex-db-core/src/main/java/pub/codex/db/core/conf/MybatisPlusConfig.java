@@ -27,7 +27,7 @@ import org.springframework.context.annotation.Configuration;
  * mybatis-plus配置
  */
 @Configuration
-@MapperScan(basePackages = {"com.codex.db.core.mapper"})
+@MapperScan(basePackages = {"pub.codex.db.core.mapper"})
 public class MybatisPlusConfig {
 
     /**

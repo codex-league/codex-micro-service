@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pub.codex.db.core.mapper.DemoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="pub.codex.db.core.entity.DemoEntity" id="demoMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+
+
+</mapper>

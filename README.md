@@ -16,10 +16,10 @@
             |【codex-server-config】    // 外部配置 【8100】
             |【codex-server-eureka】    // 注册中心 【8200】
             |
-            |【codex-service-core】     // 核心模块
-            |【codex-service-web】     //  web业务模块
+            |【codex-service-core】     // 核心模块   【6100】
+            |【codex-service-web】     //  web业务模块 【6101】
 
-            |【codex-test-core】     // 演示模块  【6000】
+            |【codex-test-core】     // 演示模块  【随机端口】
             |
              
 
