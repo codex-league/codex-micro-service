@@ -1,4 +1,4 @@
 spring:
   application:
-    name: 'WEB-SERVER'
+    name: 'WEB-SERVICE'
 

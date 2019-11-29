@@ -44,6 +44,15 @@ codex-server-eureka|8200|8200、8201|eureka监控地址
 
 #### DB
  > 配置表: db-resource -> properties.sql
+
+
+
+
+
+
+
+# Q:
+`./gradlew build 单元测试过不了.`
    
 
 

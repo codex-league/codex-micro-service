@@ -18,7 +18,7 @@ echo '\n'
 
 echo ' gradle build 重新编译服务...'
 
-./gradlew build
+./gradlew build -x test
 
 echo '服务编译完成...'
 

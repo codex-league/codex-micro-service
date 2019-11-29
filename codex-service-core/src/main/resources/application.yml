@@ -1,4 +1,5 @@
 spring:
   application:
-    name: 'WEB-SERVER'
-
+    name: 'CORE-SERVER'
+  profiles:
+    active: local

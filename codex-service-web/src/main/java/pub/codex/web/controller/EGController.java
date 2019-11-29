@@ -17,6 +17,7 @@ public class EGController {
     @ResponseBody
     public R EGIndex() {
 
+
         return R.ok();
     }
 
