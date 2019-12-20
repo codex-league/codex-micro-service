@@ -1,7 +1,7 @@
 package pub.codex.db.core.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 
 import pub.codex.db.core.mapper.DemoMapper;
 import pub.codex.db.core.entity.DemoEntity;

@@ -1,18 +1,17 @@
 package pub.codex.db.core.entity;
 
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import pub.codex.apix.annotations.*;
 import pub.codex.apix.annotations.group.VG;
 import javax.validation.constraints.*;
-import java.util.Date;
 
 import java.io.Serializable;
 
 /**
  * 演示表
  * 
- * @date 20191129165430
+ * @date 2019-12-20 16:28:25
  */
 @TableName("sys_demo")
 public class DemoEntity implements Serializable {
@@ -22,19 +21,17 @@ public class DemoEntity implements Serializable {
 	 * id
 	 */
 	@TableId
-	@NotNull(groups = {VG.Add.class,VG.Update.class,VG.Delete.class,VG.Get.class})
 	@ApiModelProperty("id")
 	private Long id;
 	/**
 	 * 姓名
 	 */
-	@NotBlank(groups = {VG.Add.class})
-	@ApiModelProperty(describe = "姓名",groups = {VG.Update.class})
+	@ApiModelProperty("姓名")
 	private String name;
 	/**
 	 * 年龄
 	 */
-	@ApiModelProperty(describe = "年龄",groups = {VG.Add.class,VG.Update.class})
+	@ApiModelProperty("年龄")
 	private Integer age;
 
 	public void setId(Long id) {
