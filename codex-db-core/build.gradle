@@ -10,7 +10,7 @@ dependencies {
     implementation("com.baomidou:mybatis-plus-boot-starter:3.3.0")
     implementation("org.springframework.cloud:spring-cloud-context")
     implementation("org.springframework.boot:spring-boot-starter-aop")
-    implementation("pub.codex:codex-apix:3.2.4")
+    implementation("pub.codex:codex-apix:3.2.5")
 }
 
 
