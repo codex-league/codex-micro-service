@@ -1,0 +1,7 @@
+server:
+  port: 8300
+
+spring:
+  application:
+    name: 'NACOS-SERVER'
+

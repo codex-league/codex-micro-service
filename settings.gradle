@@ -1,9 +1,9 @@
 rootProject.name = 'codex-micro-service'
 include 'codex-test-core'
-include 'codex-server-eureka'
-include 'codex-server-config'
+include 'codex-server-nacos'
 include 'codex-service-web'
 include 'codex-service-core'
 include 'codex-db-core'
 include 'codex-common-core'
+
 

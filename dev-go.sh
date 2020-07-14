@@ -26,6 +26,7 @@ echo '\n'
 
 echo '编译docker 服务....'
 
+docker-compose -f docker-compose/infrastructure-compose.yml build
 docker-compose -f docker-compose/basic-compose.yml build
 
 echo '服务编译完成...'
@@ -34,6 +35,7 @@ echo '\n'
 
 echo '启动docker 服务....'
 
+docker-compose -f docker-compose/infrastructure-compose.yml up -d
 docker-compose -f docker-compose/basic-compose.yml up -d
 
 echo '服务启动完成...'

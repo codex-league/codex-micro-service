@@ -4,9 +4,7 @@ def vJavaLang = '1.8'
 
 
 
-def bootProjects = [project(":codex-server-eureka"),
-                    project(":codex-server-config"),
-                    project(":codex-service-web"),
+def bootProjects = [project(":codex-service-web"),
                     project(":codex-service-core")]
 
 
@@ -28,6 +26,7 @@ subprojects(){
         imports {
             mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:Finchley.SR4"
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2.1.0.RELEASE"
 
         }
     }
