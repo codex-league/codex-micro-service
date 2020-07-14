@@ -18,4 +18,10 @@ spring:
           sql: "select `key`, value from properties where application=? and profile=? and label=?"
 
 
-
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: ${LOCAL_IP_ADDRESS:localhost}
+  client:
+    service-url:
+      defaultZone: http://eureka1:8200/eureka,http://eureka2:8201/eureka

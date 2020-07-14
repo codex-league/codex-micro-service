@@ -36,5 +36,11 @@ echo '启动docker 服务....'
 
 docker-compose -f docker-compose/basic-compose.yml up -d
 
-echo '服务编译完成...'
+echo '服务启动完成...'
 
+
+echo '清除冗余docker images'
+
+docker images|grep none|awk '{print $3}'|xargs docker rmi
+
+echo '清除冗余docker images 完成'
