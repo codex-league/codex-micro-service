@@ -1,9 +1,9 @@
 server:
-  port: 6101
+  port: 6100
 
 spring:
   application:
-    name: 'CORE-SERVICE'
+    name: 'codex-service-core'
   profiles:
     active: local
 

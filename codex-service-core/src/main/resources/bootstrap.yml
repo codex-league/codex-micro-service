@@ -1,14 +1,10 @@
 spring:
   cloud:
-    config:
-      fail-fast: true # 当项目无法连接访问至"分布式配置"，则立即快速失败
+    nacos:
+      config:
+        server-addr: ${CONFIG_NACOS_HOSTS:localhost:8848}
+        file-extension: yaml
+        group: ${CONFIG_NACOS_GROUP:DEFAULT_GROUP}
       discovery:
-        enabled: true
-        service-id: CONFIG-SERVER
-        
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://localhost:8200/eureka,http://localhost:8201/eureka
+        server-addr: ${DISCOVERY_NACOS_HOSTS:localhost:8848}
+

@@ -4,5 +4,6 @@ server:
 
 spring:
   application:
-    name: 'WEB-SERVICE'
-
+    name: 'codex-service-web'
+  profiles:
+    active: local

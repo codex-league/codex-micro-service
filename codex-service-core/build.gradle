@@ -1,16 +1,12 @@
-
 dependencies {
-    dependencies {
-        implementation project(":codex-db-core")
-        implementation("org.springframework.cloud:spring-cloud-starter")
-        implementation("org.springframework.cloud:spring-cloud-config-client")
-        implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+    implementation project(":codex-db-core")
+    implementation("org.springframework.cloud:spring-cloud-starter")
+    implementation("com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery")
+    implementation("com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config")
 
-        implementation("org.springframework.boot:spring-boot-starter-web")
-        implementation("org.springframework.boot:spring-boot-starter-actuator")    //Spring boot 运维管理
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")    //Spring boot 运维管理
 
-        compile 'pub.codex:codex-index:3.2.5'
-        compile 'pub.codex:codex-core-template-mybatis-plus:3.2.5'
-    }
-
+    compile 'pub.codex:codex-index:3.2.14'
+    compile 'pub.codex:codex-core-template-mybatis-plus:3.2.14'
 }
